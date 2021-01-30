@@ -50,13 +50,11 @@
 
     <h2>MVR-144 -- CSS object-fit: none</h2>
     <pre>Behavior Specification: 
-      The replaced content is scaled to maintain its aspect ratio while fitting within the element’s content box. 
-      The entire object is made to fill the box, while preserving its aspect ratio, -
-      so the object will be "letterboxed" if its aspect ratio does not match the aspect ratio of the box.
-      TL;DR: 等比例放大縮小, 多出來的地方留白或遮黑都可
+      The replaced content is not resized.
+      TL;DR: 保持"原尺寸", 多出來的地方clip掉
     </pre>
     <pre> Platform Capability Requirements:
-      1) Scale up & down
+      1) Center-based Clipping
     </pre>
     
     <video secondary autoplay controls muted>
